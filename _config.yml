@@ -270,7 +270,7 @@ compress_html:
     envs: development
 
 
-# Defaults
+# Defaults Post들에 적용될 기본 설정들
 defaults:
   # _posts
   - scope:
@@ -283,10 +283,12 @@ defaults:
       comments: true
       share: true
       related: true
+      #popular: false
+  
   # _pages
-   - scope:
+  - scope:
       path: "_pages"
       type: pages
-     values:
+    values:
       layout: single
-      author_profile: true  
+      author_profile: true
